@@ -1,8 +1,8 @@
 import requests, time
 
 def main():
-    gonghao='{{ secrets.GH }}'
-    shoujihao='{{ secrets.SJH }}'
+    gonghao='${{ secrets.GH }}'
+    shoujihao='${{ secrets.SJH }}'
     url="http://xg.sqxy.edu.cn/xgh5/openData"
     r = requests.Session()
     riqi=time.strftime('%Y-%m-%d',time.localtime(time.time())) #年-月-日   格式的当天日期
