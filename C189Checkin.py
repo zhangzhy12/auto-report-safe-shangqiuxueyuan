@@ -12,6 +12,7 @@ def main():
     xiangying=r.post(url, params = params)
     jieguo=xiangying.text #dict形式，但是是str格式
     jieguo=eval(jieguo) #字符串转字典类型，就可以使用dict方法操作
+    print(gonghao)
     print(jieguo["message"])
     return 1
     
