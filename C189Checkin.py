@@ -3,8 +3,10 @@ gonghao = ""
 shoujihao = ""
 
 if(gonghao == "" or shoujihao == ""):
-    gonghao = input("账号：")
-    shoujihao = input("密码：")
+    gonghao = input("工号：")
+    print(gonghao)
+    shoujihao = input("手机号：")
+    print(shoujihao)
 def main():
     #gonghao='${{ secrets.GH }}'
     #shoujihao='${{ secrets.SJH }}'
