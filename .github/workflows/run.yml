@@ -41,7 +41,7 @@ jobs:
         for ((i=0;i<1;i++))
         do
         python3 C189Checkin.py <<EOF
-        gonghao
-        shoujihao
+        $gonghao
+        $shoujihao
         EOF
         done
