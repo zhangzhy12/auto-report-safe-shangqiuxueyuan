@@ -3,10 +3,9 @@ gonghao = ""
 shoujihao = ""
 
 if(gonghao == "" or shoujihao == ""):
-    gonghao = input("工号：")
-    print(gonghao)
-    shoujihao = input("手机号：")
-    print(shoujihao)
+    gonghao = input("-----")
+    shoujihao = input("-----")
+    
 def main():
     #gonghao='${{ secrets.GH }}'
     #shoujihao='${{ secrets.SJH }}'
@@ -19,7 +18,6 @@ def main():
     xiangying=r.post(url, params = params)
     jieguo=xiangying.text #dict形式，但是是str格式
     jieguo=eval(jieguo) #字符串转字典类型，就可以使用dict方法操作
-    print(gonghao)
     print(jieguo["message"])
     return 1
     
